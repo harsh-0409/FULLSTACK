@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Poppins', sans-serif;
+} 
+
+:root {
+  --primary-color: #3a86ff;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --light-gray: #e9ecef;
+  --dark-gray: #495057;
+  --success: #38b000;
+  --white: #ffffff;
+}
+ 
+.base { 
+  width: 100%; 
+  height: 100%; 
+} 
+
+#signup{
+  width: calc(100% - 10px);
+  height: calc(100% - 60px);
+  padding: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+}
+ 
+.header { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: var(--primary-color); 
+  padding: 5px 30px;
+  border-bottom: 1px solid var(--light-gray); 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  height: 85px;
+} 
+
+#image1 { 
+  height: 25px;
+  padding-right: 150px; 
+} 
+
+#title h2 { 
+  font-size: 20px;
+  line-height: 1;
+  color: var(--white); 
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+} 
+
+#signin1, #Register1 {
+  font-size: 14px;
+  padding: 3px 12px;
+}
+
+#logo1 { 
+  flex: 1; 
+} 
+ 
+#image1 { 
+  height: 30px;  /* reduced from 50px to 40px */
+  padding-right: 150px; 
+} 
+
+#image3{ 
+  height: 30px; 
+  padding-right: 10px; 
+} 
+ 
+#title { 
+  flex: 9; 
+  text-align: center; 
+} 
+ 
+#title h2 { 
+  flex: 9;
+  font-size: 24px;  /* reduced from 28px to 24px */
+  color: var(--white); 
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+} 
+
+#signin1, #Register1 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#signin1:hover, #Register1:hover {
+  color: var(--light-gray);
+  border-bottom: 2px solid var(--white);
+}
+
+#register {
+  flex: 1;
+  text-align: right;
+  padding-left: 50px;
+}
+
+#register:hover register1 {
+  color: var(--text-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+#signin, #Register { 
+  flex: 1; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding-left: 20px;
+} 
+ 
+#signin1, #Register1 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 5px 15px;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+}
+
+#signin1:hover, #Register1:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border-bottom: none;
+}
+
+/* Remove these duplicate/unused styles */
+#register {
+  display: none;
+}
+
+#register:hover register1 {
+  display: none;
+}
+
+#register:hover register1 {
+  color: var(--text-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.container { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: calc(91vh - 180px);  
+  padding: 20px; 
+  text-align: center; 
+} 
+
+.text1 { 
+  padding-right: 30px; 
+} 
+
+.footer { 
+  background-color: var(--secondary-color); 
+  border-top: 1px solid var(--light-gray); 
+  padding: 25px; 
+  margin-top: auto; 
+} 
+
+.footer-content { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+} 
+
+.footer-text { 
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-gray);
+} 
+
+.social-icons { 
+  display: flex; 
+  gap: 20px; 
+} 
+
+.socialmedialIcon { 
+  height: 24px; 
+  width: 24px; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  filter: grayscale(100%);
+} 
+
+.socialmedialIcon:hover { 
+  opacity: 0.8; 
+  filter: grayscale(0%);
+  transform: scale(1.1);
+} 
+
+.image2 { 
+  height: 10px; 
+  padding-left: 700px; 
+} 
+
+#img2 { 
+  height: 30px; 
+} 
+
+.signinText:hover{
+  text-decoration: underline;
+}
+
+.search-container {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  margin-top: 0%;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.searchbar {
+  padding: 0;
+  margin-left: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-input-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+}
+
+#search, #location {
+  flex: 1;
+  padding: 14px 18px;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+#search:focus, #location:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(58, 134, 255, 0.15);
+}
+
+.search-button {
+  padding: 14px 28px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-button:hover {
+  background-color: #2a75e6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.Content {
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  padding: 50px 20px;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.hero-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.text1, .text2, .text3 {
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.text2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.text3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+#popup {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  backdrop-filter: blur(5px);
+}
+
+.popupwindow {
+  width: 400px;
+  background: var(--white);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+#popupHeader {
+  width: 100%;
+  padding: 20px;
+  background: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#Signin, #signin {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.usernameLabel, .passwordLabel {
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+#usernameInput, #passwordInput {
+  padding: 14px;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: auto;
+}
+
+#usernameInput:focus, #passwordInput:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(58, 134, 255, 0.15);
+}
+
+.forgotPassword {
+  text-align: right;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 14px;
+  height: auto;
+  line-height: normal;
+  padding: 10px 0;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.forgotPassword label {
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.signinButton {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.signinButton:hover {
+  background: #2a75e6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.div1, .div2 {
+  height: 1px;
+  background: var(--light-gray);
+  margin: 20px 0;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  color: var(--light-gray);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+.Content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#signup label {
+  display: block;
+  padding: 10px 0px 3px 0px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+#signup select {
+  width: 100%;
+  height: 45px;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  padding: 0 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#signup input {
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#signup input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(58, 134, 255, 0.15);
+}
+
+#signup button {
+  width: 100%;
+  height: 45px;
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#signup button:hover {
+  background: #2a75e6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#signup div {
+  width: 100%;
+  font-size: 14px;
+  color: var(--dark-gray);
+  margin-top: 20px;
+  text-align: center;
+}
+
+#signup div span {
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#signup div span:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translate(-50%, -60%); opacity: 0; }
+  to { transform: translate(-50%, -50%); opacity: 1; }
+}
+
+#popup {
+  animation: fadeIn 0.3s ease;
+}
+
+.popupwindow {
+  animation: slideIn 0.3s ease;
+}

@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #000000;
+  --text-color: #333333;
+  --border-color: #cccccc;
+  --white: #ffffff;
+  --button-color: #000000;
+  --delete-color: #e74c3c;
+  --edit-color: #3498db;
+  --hover-color: #f8f8f8;
+  --transition: all 0.2s ease;
+}
+
+.jpcontainer {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+}
+
+.popupwindow {
+  width: 450px;
+  background: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.popupheader {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 16px 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popupheader label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.popupheader span {
+  cursor: pointer;
+  font-size: 22px;
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.popupheader span:hover {
+  opacity: 0.8;
+}
+
+.popupcontent {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.popupcontent label {
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.popupcontent input,
+.popupcontent select,
+.popupcontent textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.popupcontent input:focus,
+.popupcontent select:focus,
+.popupcontent textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.popupcontent textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.popupcontent button {
+  background: var(--button-color);
+  color: var(--white);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  margin: 15px auto 0;
+  transition: var(--transition);
+}
+
+.popupcontent button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+/* Job listing display styles */
+.header {
+  padding: 24px;
+  background: var(--primary-color);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 20px;
+}
+
+.result {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.result:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.div1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.div1 label {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-right: auto;
+}
+
+.div1 span {
+  font-weight: 600;
+  color: var(--button-color);
+  padding: 6px 14px;
+  border: 1px solid var(--button-color);
+  border-radius: 4px;
+}
+
+/* Action button styles */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.edit-btn {
+  background-color: var(--edit-color);
+  color: var(--white);
+}
+
+.delete-btn {
+  background-color: var(--delete-color);
+  color: var(--white);
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.div2 {
+  color: var(--text-color);
+  font-size: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  gap: 8px;
+}
+
+.div3 {
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer {
+  padding: 24px 20px;
+  text-align: right;
+  border-top: 1px solid var(--border-color);
+  margin-top: 20px;
+}
+
+.footer button {
+  background: var(--button-color);
+  color: var(--white);
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.footer button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content {
+    padding: 0 12px;
+  }
+  
+  .result {
+    padding: 18px;
+  }
+  
+  .div1 {
+    flex-wrap: wrap;
+  }
+  
+  .div1 label {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .action-buttons {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popupwindow {
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .popupheader label {
+    font-size: 16px;
+  }
+  
+  .popupcontent {
+    padding: 16px;
+  }
+  
+  .header {
+    padding: 18px;
+    font-size: 20px;
+  }
+  
+  .result {
+    padding: 16px;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
