@@ -1,6 +1,6 @@
 // CallApi.js
 
-export const BASEURL = "http://localhost:2031/";
+export const BASEURL = "http://localhost:8030/JobPort-0.0.1-SNAPSHOT/";
 
 export function callApi(reqmethod, url, data, responseHandler) {
     var option;
